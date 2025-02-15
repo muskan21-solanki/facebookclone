@@ -1,4 +1,4 @@
-![Homepage Screenshot](https://raw.githubusercontent.com/muskan2-solanki/facebookclone/main/images/screenshot1.png)# Facebook Clone  
+![Homepage Screenshot](https://github.com/muskan21-solanki/facebookclone/blob/main/images/screenshot1.png)# Facebook Clone  
 
 This is a **Facebook Clone** created using **HTML, CSS, and JavaScript**. The project replicates the design and functionality of Facebook's user interface, including a navbar, sidebar, post section, and interactive features.
 
