@@ -1,0 +1,143 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+    background: url('images/welcomeimg.avif') no-repeat center center/cover;
+}
+
+/* Container */
+.container {
+    display: flex;
+}
+
+/* Header */
+.header {
+    background-color: #4267B2;
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+    text-align: left;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Container */
+.container {
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    height: 100vh;
+}
+
+.sidebar a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+.sidebar a:hover {
+    color: #4267B2;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+}
+
+#logoutBtn {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    background-color: white;
+    color:#4267B2 ;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+#logoutBtn:hover {
+    background-color: rgb(205, 203, 203);
+}
+/* Main Content Area (Scrollable) */
+main {
+    flex-grow: 1;
+    height: calc(100vh - 60px);
+    overflow-y: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* For positioning the button */
+}
+/* Container for heading + profile info */
+.info-container {
+    text-align: center;
+    width: 100%;
+}
+
+/* Heading for Profile Information */
+.info-heading {
+    background-color: #4267B2; /* Same as header */
+    color: white;
+    padding: 15px;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    width: 450px; /* Match profile info width */
+    border-radius: 10px 10px 0 0; /* Rounded top corners */
+    margin: 0 auto 10px; /* Centered */
+}
+
+/* Profile Information (Centered Properly) */
+.profile-info {
+    width: 450px; /* Fixed width */
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* Center horizontally */
+    border: 3px solid #4267B2;
+}
+
+/* Input Fields - Equal Width */
+.profile-info input {
+    width: 100%; /* Ensure all input fields are the same length */
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+/* Edit Info Button (Moved to Bottom-Right of Scrollable Screen) */
+#editInfoBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4267B2;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    cursor: pointer;
+}
+
+#editInfoBtn:hover {
+    background-color: #365491;
+}

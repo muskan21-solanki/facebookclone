@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <div class="header">
+        <a href="index.html">Facebook</a>
+        <button id="logoutBtn">Logout</button>
+    </div>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <a href="profile.html">Profile</a>
+            <a href="Newsfeed.html">News Feed</a>
+            <a href="messages.html">Messages</a>
+            <a href="events.html">Events</a>
+            <a href="groups.html">Groups</a>
+        </div>
+    <main>
+        <div class="info-container">
+            <h2 class="info-heading">Your Information</h2>
+            <div class="profile-info">
+                <label>Name: <input type="text" id="name" value="John Doe" disabled></label><br>
+                <label>Email: <input type="email" id="email" value="johndoe@example.com" disabled></label><br>
+                <label>DOB: <input type="date" id="dob" value="2000-01-01" disabled></label><br>
+                <label>Education: <input type="text" id="education" value="B.Sc. Computer Science" disabled></label><br>
+            </div>
+        </div>
+        <button id="editInfoBtn">Edit Info</button>
+    </main>
+
+    <script src="profile.js"></script>
+</body>
+</html>

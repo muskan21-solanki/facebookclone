@@ -1,0 +1,126 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    overflow:hidden;
+    background: url('images/emoji.avif') no-repeat center center/cover;
+}
+
+/* Header */
+.header {
+    background-color: #4267B2;
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+    text-align: left;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Page Container */
+.container {
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    height: 100vh;
+}
+
+.sidebar a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+.sidebar a:hover {
+    color: #4267B2;
+}
+
+/* Main Content */
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y:auto;
+    max-height: 90vh;
+}
+
+/* Section Headings (Updated to Header Color) */
+.section-heading {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #ffffff; /* Same color as header */
+    background-color: #4267B2;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Groups Section */
+.group-container {
+    background: white;
+    padding: 20px;
+    border: 3px solid #4267B2; /* Border color same as header */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Individual Group */
+.group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.group:last-child {
+    border-bottom: none;
+}
+
+.group-info {
+    font-size: 18px;
+}
+
+/* Join Button */
+.join-btn {
+    background-color: #4267B2;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.join-btn:hover {
+    background-color: #365899;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+}

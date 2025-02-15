@@ -1,0 +1,112 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+/* Header */
+.header {
+    background-color: #4267B2;
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+    text-align: left;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Container */
+.container {
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 54px;
+    overflow-y: auto;
+}
+
+/* Newsfeed Section */
+.newsfeed-container {
+    flex-grow: 1;
+    background-color: white;
+    padding: 20px;
+    margin-left: 270px;
+    height: 100vh;
+    overflow-y: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background: url('images/newsfeed.avif') no-repeat center center/cover;
+}
+
+
+/* Content Box */
+.newsfeed-content {
+    background: #4267B2;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    max-width: 700px;
+    color: white;
+}
+
+/* Section Title */
+.newsfeed-content h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Individual News Box */
+.news-box {
+    background: white;
+    color: black;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Collapsed state */
+.news-box .extra-content {
+    display: none;
+}
+
+/* Toggle Button */
+.toggle-btn {
+    background: #4267B2;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.toggle-btn:hover {
+    background: #365899;
+}
+
+/* Expanded State */
+.news-box.expanded {
+    height: auto;
+    padding-bottom: 20px;
+}

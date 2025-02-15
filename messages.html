@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages - Facebook</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="messages.css">
+</head>
+<body>
+
+    <!-- Fixed Header -->
+    <div class="header"><a href="index.html">Facebook</a></div>
+
+    <div class="container">
+        
+        <!-- Fixed Sidebar -->
+        <div class="sidebar">
+            <a href="profile.html">Profile</a>
+            <a href="Newsfeed.html">News Feed</a>
+            <a href="messages.html">Messages</a>
+            <a href="events.html">Events</a>
+            <a href="groups.html">Groups</a>
+        </div>
+
+        <!-- Scrollable Chat Section -->
+        <div class="chat-section">
+            
+            <!-- Chat List -->
+            <div class="chat-list">
+                <input type="text" placeholder="Search chats...">
+                <ul>
+                    <li onclick="openChat('John Doe', 'john@example.com')">
+                        <img src="images/profile-pic.png" alt="User"> John Doe
+                        <button class="chat-btn">Chat</button>
+                    </li>
+                    <li onclick="openChat('Alice Brown', 'alice@example.com')">
+                        <img src="images/profile-pic.png" alt="User"> Alice Brown
+                        <button class="chat-btn">Chat</button>
+                    </li>
+                    <li onclick="openChat('David Smith', 'david@example.com')">
+                        <img src="images/profile-pic.png" alt="User"> David Smith
+                        <button class="chat-btn">Chat</button>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Chat Window -->
+            <div class="chat-window">
+                <div class="chat-header">
+                    <img src="images/profile-pic.png" id="chat-user-pic" alt="User">
+                    <h3 id="chat-username">Chat with your favourite people</h3>
+                </div>
+
+                <div class="messages" id="chat-messages">
+                    <p>Select a person to start chatting.</p>
+                </div>
+
+                <div class="message-input">
+                    <input type="text" id="message-box" placeholder="Type a message...">
+                    <button onclick="sendMessage()">Send</button>
+                </div>
+            </div>
+
+            <!-- User Info Panel -->
+            <div class="user-info">
+                <img src="images/profile-pic.png" id="user-details-pic" alt="User">
+                <h3 id="user-details-name">User Info</h3>
+                <p><b>Email:</b> <span id="user-email">N/A</span></p>
+                <p><b>DOB:</b> January 1, 1990</p>
+                <p><b>Education:</b> Bachelor's in Computer Science</p>
+                <p><b>Location:</b> New York</p>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="messages.js"></script>
+</body>
+</html>

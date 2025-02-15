@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logged Out</title>
+    <link rel="stylesheet" href="profile.css">
+    <style>
+        body {
+            background-color: #4267B2;
+            color: white;
+            text-align: center;
+            padding-top: 20%;
+        }
+        #loginBtn {
+            background-color: white;
+            color: #4267B2;
+            border: none;
+            padding: 10px 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Logged out successfully!</h1>
+    <button id="loginBtn">LOG IN</button>
+
+    <script>
+        document.getElementById('loginBtn').addEventListener('click', function() {
+            window.location.href = 'profile.html';
+        });
+    </script>
+</body>
+</html>

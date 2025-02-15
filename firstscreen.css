@@ -1,0 +1,43 @@
+/* Full-screen background with a light-colored image */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url('images/welcomeimg.avif') no-repeat center center/cover;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Main container */
+.welcome-container {
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Initial text (FACEBOOK) */
+#main-text {
+    font-size: 80px;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+/* Hidden text (WELCOME + Start your journey) */
+#sub-text {
+    font-size: 30px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+/* Show sub-text when active */
+.show {
+    opacity: 1 !important;
+}
+
+/* Hide main-text smoothly */
+.hide {
+    opacity: 0 !important;
+}
